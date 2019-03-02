@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>California Burning (2008-2016)</title>
+
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if IE<9]>
+		<![endif]-->
+	</head>
+
+	<body style="background-color:#DC143C;">
+		<!--put your initial page content here-->
+		<div id="above-map">
+		<div class="btn-group">
+			<button class="filter" id="display-all">Display all</button>
+			<button class="filter" id="larger-than-100">Fires > 100 acres</button>
+ 			<button class="filter" id="larger-than-500">Fires > 500 acres</button>
+			<button class="filter" id="larger-than-1000">Fires > 1000 acres</button>
+			<button class="filter" id="larger-than-5000">Fires > 5000 acres</button>
+			<p></p>
+		</div>
+		<div></div>
+		<div id="mapid"></div>
+		<div style="float:left;top:25; background-color:#DC143C; alpha(opacity=40); color:white; padding:10px; width: 100%">
+        <img src="img/total_chart.png" style="float:left;width:350px; padding:8px 20px 1px 8px">
+
+		<h2 style="padding:10px 5px 0px 5px">California Burning (2008-2016)</h2>
+		
+		<p style="font-size:14px;">This map shows the total amount of acres burned per year in each California county due to wildfires. Eleven out of the twenty most destructrive wildfires in recorded California history (as of February 2019) have occurred since 2008. At the top of the page, you can filter the data by which counties had the most acres burned in the selected year. This data does not discriminate by cause.</p>
+		<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="http://cdfdata.fire.ca.gov">Source: CAL FIRE</a>
+		<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="https://thenounproject.com">Icons: The Noun Project</a>
+		</div> 
+				
+	</div>
+		<!--you can also use this space for internal scripts or stylesheets;
+		place these within <script> or <style> tags-->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="crossorigin=""></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/geojson.js"></script>
+	</body>
+</html>

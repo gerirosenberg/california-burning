@@ -1,0 +1,87 @@
+/* Stylesheet by Geri Rosenberg, 2019 */
+#mapid {
+	height: 550px;
+	width: 100%;
+	display: inline-block;
+	padding: 0px;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+#h2 {
+	font-size: 1.2em;
+	font-style: bold;
+}
+
+#above-map {
+	vertical-align: top;
+	display: inline-block;
+	width:100%;
+	background-color: #DC143C; 
+}
+
+.range-slider {
+	width: 200px;
+}
+
+#forward {
+	float: right;
+	padding: 2px;
+}
+
+#reverse {
+	float: left;
+	padding: 2px;
+}
+
+.btn-group .filter {
+  background-color: #DC143C; 
+  border: 1px solid maroon;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .filter:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .filter:hover {
+  background-color: #ff8000;
+}
+
+
+.leaflet-popup-content p {
+	margin: 0.2em 0;
+}
+
+.sequence-control-container {
+	width: 350px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.8);
+	padding: 10px;
+	line-height: 40px;
+	text-align: center;
+	border: solid gray 1px;
+}
+
+.legend-control-container{
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.temporal-legend {
+	position: absolute;
+}
