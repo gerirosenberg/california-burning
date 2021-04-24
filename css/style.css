@@ -1,9 +1,7 @@
 /* Stylesheet by Geri Rosenberg, 2021 */
 #mapid {
-	height: 100%;
 	display: block;
 	padding: 0px;
-	float: right;
 }
 
 #map {
