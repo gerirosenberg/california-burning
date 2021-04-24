@@ -121,11 +121,14 @@
     width: 100%;
     background-color: rgba(255,255,255,0.8);
     padding: 10px;
-    line-height: 45px;
     text-align: center;
     border: solid gray 1px;
 }
 
 .temporal-legend {
 	position: absolute;
+}
+
+.legend-circle {
+	top:40px;
 }

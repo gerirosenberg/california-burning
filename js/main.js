@@ -258,7 +258,7 @@ function createLegend(map, attributes){
             $(container).append('<div id="temporal-legend">')
 
             // start attribute legend svg string
-            var svg = '<svg id="attribute-legend" width="160px" height="60px">';
+            var svg = '<svg id="attribute-legend" width="200px" height="80px">';
 
             // array of circle names to base loop on
             var circles = {
@@ -274,7 +274,7 @@ function createLegend(map, attributes){
                 svg += '<circle class="legend-circle" id="' + circle + '" fill="#DC143C" fill-opacity="0.9" stroke="#000000" cx="30"/>';
 
                 //text string
-                svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>';
+                svg += '<text id="' + circle + '-text" x="120" y="' + circles[circle] + '"></text>';
 
             };
 
