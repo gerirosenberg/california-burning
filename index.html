@@ -10,26 +10,35 @@
 	</head>
 
 	<body style="background-color:#DC143C;">
-		<div id="above-map">
-		<div class="btn-group">
-			<button class="filter" id="display-all">Display all</button>
+		<div id="info" class="column left" style="width:25%;">
+		<div class="container">
+		<div class="btn-group btn-100">
 			<button class="filter" id="larger-than-100">Fires > 100 acres</button>
+		</div>
+		<div class="btn-group btn-500">
  			<button class="filter" id="larger-than-500">Fires > 500 acres</button>
+		</div>
+		<div class="btn-group btn-1000">
 			<button class="filter" id="larger-than-1000">Fires > 1000 acres</button>
+		</div>
+		<div class="btn-group btn-5000">
 			<button class="filter" id="larger-than-5000">Fires > 5000 acres</button>
 			<p></p>
 		</div>
-		<div></div>
-		<div id="mapid"></div>
-		<div style="float:left;top:25; background-color:#DC143C; alpha(opacity=40); color:white; padding:10px; width: 100%">
-        <img src="img/total_chart.png" style="float:left;width:350px; padding:8px 20px 1px 8px">
-
-		<h2 style="padding:10px 5px 0px 5px">California Burning (2008-2016)</h2>
-		
-		<p style="font-size:14px;">This map shows the total amount of acres burned per year in each California county due to wildfires. Eleven out of the twenty most destructrive wildfires in recorded California history (as of February 2019) have occurred since 2008. At the top of the page, you can filter the data by which counties had the most acres burned in the selected year. This data does not discriminate by cause.</p>
-		<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="http://cdfdata.fire.ca.gov">Source: CAL FIRE</a>
-		<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="https://thenounproject.com">Icons: The Noun Project</a>
-		</div> 
+		<div class="btn-group btn-all">
+			<button class="filter" id="display-all">Display all</button>
+		</div>
+		</div>
+		<div>
+			<h2>California Burning</h2>
+			<div class="year"><h3>(2008-2016)</h3></div>
+			<p>Click each fire for details.</p>
+			<p style="font-size:14px;">This map shows the total amount of acres burned per year in each California county due to wildfires. Eleven out of the twenty most destructrive wildfires in recorded California history (as of February 2019) have occurred since 2008. At the top of the page, you can filter the data by which counties had the most acres burned in the selected year. This data does not discriminate by cause.</p>
+			<img src="img/total_chart.png" style="float:left;width:100%;">
+			<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="http://cdfdata.fire.ca.gov">Source: CAL FIRE</a>
+			<a style="font-size:9px; padding:10px 10px 10px 10px;float:right;color:white;" href="https://thenounproject.com">Icons: The Noun Project</a>
+		</div>
+		<div id="mapid" class="column right" style="width:75%"></div>
 				
 	</div>
 		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>

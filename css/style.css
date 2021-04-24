@@ -1,8 +1,7 @@
-/* Stylesheet by Geri Rosenberg, 2019 */
+/* Stylesheet by Geri Rosenberg, 2021 */
 #mapid {
-	height: 550px;
-	width: 70%;
-	display: inline-block;
+	height: 100%;
+	display: block;
 	padding: 0px;
 	float: right;
 }
@@ -17,11 +16,25 @@
 	font-style: bold;
 }
 
-#info-column {
-	display: inline-block;
-	width:30%;
+#info {
+	display: block;
+	height: 100%;
 	background-color: #DC143C;
 	float: left;
+	padding: 10px;
+	color: white;
+}
+
+.column {
+  float: left;
+ }
+
+.left {
+	width: 25%;
+}
+
+.right {
+	width: 75%;
 }
 
 .range-slider {
@@ -38,6 +51,38 @@
 	padding: 2px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  	"one five"
+  	"thou five-thou"
+  	"display display";
+}
+
+.btn-100 {
+	grid-area: one;
+	border-right: none;
+}
+
+.btn-500 {
+	grid-area: five;
+}
+
+.btn-1000 {
+	grid-area: thou;
+	border-right: none;
+}
+
+.btn-5000 {
+	grid-area: five-thou;
+}
+
+.btn-all {
+	grid-area: display;
+}
+
 .btn-group .filter {
   background-color: #DC143C; 
   border: 1px solid maroon;
@@ -45,18 +90,19 @@
   padding: 10px 10px 10px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
   cursor: pointer;
   float: left;
-}
-
-.btn-group .filter:not(:last-child) {
-  border-right: none; /* Prevent double borders */
+  width: 100%;
 }
 
 .btn-group .filter:hover {
   background-color: #ff8000;
+}
+
+.year {
+	margin-top:-1rem;
 }
 
 
