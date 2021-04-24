@@ -23,21 +23,16 @@
 	color: white;
 }
 
-.left {
-	grid-area: left;
-}
-
-.right {
-	grid-area: right;
+#mapcol {
+	display: block;
+	height: 100%;
+	float: right;
+	padding: 10px;
 }
 
 .column {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  	"left right";
-}
+  float: left;
+ }
 
 .range-slider {
 	width: 200px;
