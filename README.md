@@ -1,2 +1,2 @@
 # california-burning
-Interactive Leaflet map of California wildfire data by county (2008-2016). Mapbox basemap no longer renders, working on a fix.
+Interactive Leaflet map of California wildfire data by county (2008-2016). Filter by fire size. Arrow buttons adjust year. Click fire for more popup details.
